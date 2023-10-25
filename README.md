@@ -31,3 +31,5 @@ There are two tasks. They are stored in the subfolders `task-1` and `task-2`.
    > <https://api.ipgeolocation.io/timezone?apiKey=[redacted]]&lat=latitude&long=longitude>.
    >
    > Instead of `latitude` and `longitude` you need to substitute the real latitude and longitude.
+
+You can see it live on [GitHub Pages website](https://ivan-developer-01.github.io/geolocation-screenSize-timezone-tasks-22.5/).
