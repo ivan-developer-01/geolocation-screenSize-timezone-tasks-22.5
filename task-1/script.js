@@ -13,12 +13,12 @@ button.addEventListener("click", () => {
 
 	screenDimensionsParagraph.innerHTML = `Ширина экрана: ${screenDimensions.width}, высота экрана: ${screenDimensions.height}`;
 
-	geolocationParagraph.classList.remove("error");
-
+	
 	let coords;
 
 	if ("geolocation" in navigator) {
 		navigator.geolocation.getCurrentPosition((position) => {
+			geolocationParagraph.classList.remove("error");
 			coords = position.coords;
 			geolocationParagraph.innerHTML = `Координаты: широта ${coords.latitude}, долгота ${coords.longitude}`;
 		}, displayGeolocationNotAvailable);
